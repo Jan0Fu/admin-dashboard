@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 :root {
     --gray: #dadddf;
     --blue: #1996e6;
@@ -11,8 +10,8 @@
 }
 body {
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif, Arial;
+    font-size: 1rem;
 }
 .container {
     height: 100%;
@@ -54,7 +53,7 @@ body {
 .account .photo {
     height: 50px;
     width: 50px;
-    background: url('images/doge.jpg');
+    background: url("assets/771188_man_512x512.png");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -73,7 +72,7 @@ body {
 .profile .photo {
     height: 70px;
     width: 70px;
-    background: url('images/doge.jpg');
+    background: url("assets/771188_man_512x512.png");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -110,23 +109,38 @@ body {
     font-size: 14px;
 }
 .logo > h1 {
-    margin-top: 8px;
+    margin-top: 3px;
+    margin-right: 5px;
 }
 .sidebar-tools-1 {
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: repeat(6, 40px);
+    margin-left: 9px
 }
 .sidebar-tools-2 {
     grid-row: 3 / 4;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
+    margin-left: 9px;
 }
 .tool {
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 18px;
+}
+.home {
+    margin-left: -3px;
+}
+.profile {
+    margin-left: 2px;
+}
+.tasks{
+    margin-left: 4px;
+}
+.communities {
+    margin-left: -5px;
 }
 .fa-solid {
     font-size: 20px;
