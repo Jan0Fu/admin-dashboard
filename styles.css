@@ -105,12 +105,13 @@ body {
     grid-row: 1 / 2;
     display: flex;
     align-self: center;
-    gap: 10px;
     font-size: 14px;
+    margin-left: 10px;
+
 }
 .logo > h1 {
-    margin-top: 3px;
-    margin-right: 5px;
+    padding-left: 15px;
+    
 }
 .sidebar-tools-1 {
     grid-row: 2 / 3;
