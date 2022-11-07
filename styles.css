@@ -1,56 +1,130 @@
 :root {
     --background: #fff;
 }
-* {
+
+html, body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
     font-family: 'Roboto', sans-serif, Helvetica, Arial;
     font-size: 1rem;
     height: 100%;
 }
-.container {
+.container{
     height: 100%;
     display: grid;
-    grid-template: repeat(5,1fr) / repeat(5,1fr);
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
     grid-template-areas: 
     "sidebar header header header header"
     "sidebar articles articles articles news"
     "sidebar articles articles articles news"
     "sidebar articles articles articles news"
     "sidebar articles articles articles news";
-    
 }
 .header {
-    display: grid;
+    width: 100%;
     background-color: var(--background);
     box-shadow: 0 4px 3px -1px #94a3b8;
 }
+.searchbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+.searchbox input{
+    border-radius: 15px;
+    border: none;
+    background-color:#d4d4d8;
+    padding: 10px;
+    padding-left: 30px;
+}
+.user1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 40px;
+}
+.user1 img[src="assets/morgan.jpg"]{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.greeting{
+    display: flex;
+    padding-left: 40px;
+}
+.greeting img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.greeting .hi{
+    font-weight: bold;
+    margin: 0;
+}
+.greeting .username{
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0;
+}
+.greet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons button{
+    background-color: #1992d4;
+    padding:10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+}
 .sidebar {
-    background-color: #64748b;
+    background-color: #4092bf;
+}
+.content {
+    padding: 10px;
+    background-color: var(--background);
 }
 .articles {
     display: grid;
-    gap: 15px;
-    margin: 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
-    background-color: #e2e8f0;
-    font-size: 0.8rem;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    grid-template-areas: 
+    "card card"
+    "card card"
+    "card card";
+    gap: 15px; 
 }
 .article {
     background-color: var(--background);
-    border-radius: 15px;
-    max-width: 300px;
-    max-height: 250px;
-    padding: 15px;
-    
+    border-radius: 5px;
+    border-left: 5px solid orange;
+    padding: 0px 10px;
+    box-shadow: 2px 2px #94a3b8;
 }
-.annoucements {
+.news {
     display: flex;
     flex-direction: column;
     margin: 15px;
+}
+
+
+#header{
+    grid-area: header;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#article{
+    grid-area: article;
+}
+#news{
+    grid-area: news;
 }
