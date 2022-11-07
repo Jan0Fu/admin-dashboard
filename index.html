@@ -2,122 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
-        <div class="header" id="header">
-            <div class="searchbox" id="searchbox">
-                <img src="./assets/magnify.png" class="icon" alt="">
-                <input type="text" size="60" placeholder="Search">
-            </div>
-            <div class="user1" id="user1">
-                <img src="assets/notification.png" class="icon" alt="">
-                <img src="assets/morgan.jpg" alt="">
-                <p><b>Morgan Oakley</b></p>
-            </div>
-            <div class="greeting" id="greeting">
-                <img src="assets/morgan.jpg" alt="" class="icon">
-                <div class="greet">
-                    <p class="hi">Hi there,</p>
-                    <p class="username">Morgan Oakley (@morgan)</p>
+        <div class="header">
+            <div class="nav">
+                <div class="search-bar">
+                    <img src="assets/magnify.svg" alt="search icon">
+                    <input type="text" id="search-input">
+                </div>
+                <div class="account">
+                    <img src="assets/bell-outline.svg" alt="bell">
+                    <div class="photo"></div>
+                    <h3>Morgan Oakley</h3>
                 </div>
             </div>
-            <div class="buttons" id="buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="tools">
+                <div class="profile">
+                    <div class="photo"></div>
+                    <div class="profile-text">
+                        <p>Hi there,</p>
+                        <h2>Morgan Oakley (@morgan)</h2>
+                    </div>
+                </div>
+                <div class="btns">
+                    <div class="btn">New</div>
+                    <div class="btn">Upload</div>
+                    <div class="btn">Share</div>
+                </div>
             </div>
         </div>
-        <div class="sidebar" id="sidebar">
-            <div class="dashboard">
-                <img src="assets/dashboard.png" alt="">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/dog-side.png" alt="dog icon">
                 <h1>Dashboard</h1>
             </div>
-            <div class="user">
-                <div class="home">
-                    <img src="assets/home.png" class="icon" alt="">
-                    <a href="">Home</a>
+            <div class="sidebar-tools-1">
+                <div class="tool">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>Home</h3>
                 </div>
-                <div class="profile">
-                    <img src="assets/profile.png" class="icon" alt="">
-                    <a href="">Profile</a>
+                <div class="tool">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Profile</h3>
                 </div>
-                <div class="messages">
-                    <img src="assets/message.png" class="icon" alt="">
-                    <a href="">Messages</a>
+                <div class="tool">
+                    <i class="fa-solid fa-message"></i>
+                    <h3>Messages</h3>
                 </div>
-                <div class="history">
-                    <img src="assets/history.png" class="icon" alt="">
-                    <a href="">History</a>
+                <div class="tool">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h3>History</h3>
                 </div>
-                <div class="tasks">
-                    <img src="assets/tasks.png" class="icon" alt="">
-                    <a href="">Tasks</a>
+                <div class="tool">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <h3>Tasks</h3>
                 </div>
-                <div class="communities">
-                    <img src="assets/communities.png" class="icon" alt="">
-                    <a href="">Communities</a>
-                </div>
-            </div>
-            <div class="control">
-                <div class="setting">
-                    <img src="assets/setting.png" class="icon" alt="">
-                    <a href="">Settings</a>
-                </div>
-                <div class="support">
-                    <img src="assets/support.png" class="icon" alt="">
-                    <a href="">Support</a>
-                </div>
-                <div class="privacy">
-                    <img src="assets/privacy.png" class="icon" alt="">
-                    <a href="">Privacy</a>
+                <div class="tool">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h3>Communities</h3>
                 </div>
             </div>
-        </div>
-        <div class="sidebar" id="sidebar">
-        </div>
-        <div class="content">
-            <div class="articles" id="articles">
-                <div class="article">
-                    <h4>Super Cool Project</h4>
-                    <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
-                        facilisis felis accumsan nec.</p>
+            <div class="sidebar-tools-2">
+                <div class="tool">
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Settings</h3>
                 </div>
-                <div class="article">
-                    <h4>Less Cool Project</h4>
-                    <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius
-                        pellentesque lacus.</p>
+                <div class="tool">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Support</h3>
                 </div>
-                <div class="article">
-                    <h4>Impossible App</h4>
-                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
-                        id.</p>
-                </div>
-                <div class="article">
-                    <h4>Easy Peasy App</h4>
-                    <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna get accumsan aliquam. Curabitur dignissim nisi in tortor
-                        commodo, ac bibendum magna tincidunt.</p>
-                </div>
-                <div class="article">
-                    <h4>Ad Blocker</h4>
-                    <p>Quisque get rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada
-                        eros.</p>
-                </div>
-                <div class="article">
-                    <h4>Money Maker</h4>
-                    <p>Present convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
-                        scelerisque tortor purus sit amet ex.
-                        Pellentesque mollis nec sem vel aliquam.</p>
+                <div class="tool">
+                    <i class="fa-solid fa-shield"></i>
+                    <h3>Privacy</h3>
                 </div>
             </div>
         </div>
-        <div class="news" id="news">News
+        <div class="main-content">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-text">
+                            <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam, delectus consequuntur dolores atque iure.</p>
+                        </div>
+                        <div class="card-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam, delectus consequuntur dolores atque iure.</p>
+                        </div>
+                        <div class="card-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam, delectus consequuntur dolores atque iure.</p>
+                        </div>
+                        <div class="card-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam, delectus consequuntur dolores atque iure.</p>
+                        </div>
+                        <div class="card-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam, delectus consequuntur dolores atque iure.</p>
+                        </div>
+                        <div class="card-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam, delectus consequuntur dolores atque iure.</p>
+                        </div>
+                        <div class="card-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="announces">
+                <h4>Announcements</h4>
+                <div class="announce-card">
+                    <div class="announce-card-item">
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, molestiae?</p>
+                    </div>
+                    <hr/>
+                    <div class="announce-card-item">
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, molestiae?</p>
+                    </div>
+                    <hr/>
+                    <div class="announce-card-item">
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, molestiae?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h4>Trending</h4>
+                <div class="trending-card">
+                    <div class="trending-profile">
+                        <div class="photo-1"></div>
+                        <div class="trending-profile-text">
+                            <p class="profile-name">@Bob</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending-profile">
+                        <div class="photo-2"></div>
+                        <div class="trending-profile-text">
+                            <p class="profile-name">@Victor</p>
+                            <p>Restaurant Chief</p>
+                        </div>
+                    </div>
+                    <div class="trending-profile">
+                        <div class="photo-3"></div>
+                        <div class="trending-profile-text">
+                            <p class="profile-name">@Steve</p>
+                            <p>Proud Soldja</p>
+                        </div>
+                    </div>
+                    <div class="trending-profile">
+                        <div class="photo-4"></div>
+                        <div class="trending-profile-text">
+                            <p class="profile-name">@Justin</p>
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
